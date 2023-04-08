@@ -19,7 +19,7 @@ for root, dirs, files in os.walk(".", topdown=False):
                   print(os.path.basename(root))
                   print(os.path.basename(name))
                   components = os.path.basename(root).split("_")
-                  filepath = Path("host-"+host_dict[components[0]]+components[1].replace("G", "-guest")+".pdb")
+                  filepath = Path("host-"+host_dict[components[0]]+components[1].replace("G", "-guest-")+".pdb")
                   print(cwd/filepath)
                   amber = pmd.load_file(os.path.join(root, name))
                   amber.save(str(filepath), overwrite=True)
