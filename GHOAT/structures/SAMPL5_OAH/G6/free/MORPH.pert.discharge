@@ -1,0 +1,147 @@
+version 1
+ molecule MOL
+	 atom
+	 	 name O1
+	 	 initial_type    o
+		 final_type      o
+		 initial_charge -0.46449
+		 final_charge    0.00000
+		 initial_LJ      2.95992  0.21000
+		 final_LJ        2.95992  0.21000
+	 endatom
+	 atom
+	 	 name O2
+	 	 initial_type    o
+		 final_type      o
+		 initial_charge -0.46449
+		 final_charge    0.00000
+		 initial_LJ      2.95992  0.21000
+		 final_LJ        2.95992  0.21000
+	 endatom
+	 atom
+	 	 name N1
+	 	 initial_type    no
+		 final_type      no
+		 initial_charge  0.69032
+		 final_charge    0.00000
+		 initial_LJ      3.25000  0.17000
+		 final_LJ        3.25000  0.17000
+	 endatom
+	 atom
+	 	 name C1
+	 	 initial_type    ca
+		 final_type      ca
+		 initial_charge  0.01603
+		 final_charge    0.00000
+		 initial_LJ      3.39967  0.08600
+		 final_LJ        3.39967  0.08600
+	 endatom
+	 atom
+	 	 name C2
+	 	 initial_type    ca
+		 final_type      ca
+		 initial_charge -0.11729
+		 final_charge    0.00000
+		 initial_LJ      3.39967  0.08600
+		 final_LJ        3.39967  0.08600
+	 endatom
+	 atom
+	 	 name C3
+	 	 initial_type    ca
+		 final_type      ca
+		 initial_charge -0.19039
+		 final_charge    0.00000
+		 initial_LJ      3.39967  0.08600
+		 final_LJ        3.39967  0.08600
+	 endatom
+	 atom
+	 	 name C4
+	 	 initial_type    ca
+		 final_type      ca
+		 initial_charge -0.04625
+		 final_charge    0.00000
+		 initial_LJ      3.39967  0.08600
+		 final_LJ        3.39967  0.08600
+	 endatom
+	 atom
+	 	 name C5
+	 	 initial_type    ca
+		 final_type      ca
+		 initial_charge -0.19795
+		 final_charge    0.00000
+		 initial_LJ      3.39967  0.08600
+		 final_LJ        3.39967  0.08600
+	 endatom
+	 atom
+	 	 name C6
+	 	 initial_type    ca
+		 final_type      ca
+		 initial_charge -0.08102
+		 final_charge    0.00000
+		 initial_LJ      3.39967  0.08600
+		 final_LJ        3.39967  0.08600
+	 endatom
+	 atom
+	 	 name C7
+	 	 initial_type    c
+		 final_type      c
+		 initial_charge  0.76272
+		 final_charge    0.00000
+		 initial_LJ      3.39967  0.08600
+		 final_LJ        3.39967  0.08600
+	 endatom
+	 atom
+	 	 name O3
+	 	 initial_type    o
+		 final_type      o
+		 initial_charge -0.75946
+		 final_charge    0.00000
+		 initial_LJ      2.95992  0.21000
+		 final_LJ        2.95992  0.21000
+	 endatom
+	 atom
+	 	 name O4
+	 	 initial_type    o
+		 final_type      o
+		 initial_charge -0.75946
+		 final_charge    0.00000
+		 initial_LJ      2.95992  0.21000
+		 final_LJ        2.95992  0.21000
+	 endatom
+	 atom
+	 	 name H1
+	 	 initial_type    ha
+		 final_type      ha
+		 initial_charge  0.17391
+		 final_charge    0.00000
+		 initial_LJ      2.59964  0.01500
+		 final_LJ        2.59964  0.01500
+	 endatom
+	 atom
+	 	 name H2
+	 	 initial_type    ha
+		 final_type      ha
+		 initial_charge  0.15733
+		 final_charge    0.00000
+		 initial_LJ      2.59964  0.01500
+		 final_LJ        2.59964  0.01500
+	 endatom
+	 atom
+	 	 name H3
+	 	 initial_type    ha
+		 final_type      ha
+		 initial_charge  0.13753
+		 final_charge    0.00000
+		 initial_LJ      2.59964  0.01500
+		 final_LJ        2.59964  0.01500
+	 endatom
+	 atom
+	 	 name H4
+	 	 initial_type    ha
+		 final_type      ha
+		 initial_charge  0.14297
+		 final_charge    0.00000
+		 initial_LJ      2.59964  0.01500
+		 final_LJ        2.59964  0.01500
+	 endatom
+end molecule

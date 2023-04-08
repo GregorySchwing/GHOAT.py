@@ -1,0 +1,23 @@
+
+# Writing all output to file mbar.pmf
+We are only eliminating samples from the beginning of the data and are still working with highly correlated data!
+We are only eliminating samples from the beginning of the data and are still working with highly correlated data!
+K (total states) = 12, total samples = 196800
+N_k = 
+[ 16400.  16400.  16400.  16400.  16400.  16400.  16400.  16400.  16400.
+  16400.  16400.  16400.]
+There are 12 states with samples.
+Initializing free energies to zero.
+Initial dimensionless free energies with method zeros
+f_k = 
+[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+Final dimensionless free energies
+f_k = 
+[  0.          -5.07725046   0.61466672   6.06074137  10.33213786
+  12.43187309  13.64496353  14.80365858  16.11418151  18.02234788
+  18.8454935   19.86346799]
+MBAR initialization complete.
+Free energy difference estimated with MBAR is: 11.762898 kcal/mol +/- 0.035244 kcal/mol
+Free energy difference estimated with MBAR is: 29.145047 kJ/mol +/- 0.147459 kJ/mol
+Free energy difference estimated with TI is: 17.940557 kcal/mol
+Starting /home/julien/sire.app/bin/analyse_freenrg_mbar: number of threads equals 32
