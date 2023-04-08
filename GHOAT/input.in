@@ -6,20 +6,20 @@
 
 # Calculation definitions
 
-host = host-cb7                      # Choose host name
-guest_list = [guest-1,guest-3,guest-5]       # Choose list of guest names
+host = host-oa               # Host name 
+guest_list = [lda-guest-1,lda-guest-3,lda-guest-5]       # Choose list of guest names
 
 # Guest residue name
 
-host_code           = CB7         # Three letter residue name for host
+host_code           = OCT         # Three letter residue name for host
 guest_list_code     = [MOL,MOL,MOL]   # Three letter residue names for guests (in the same order as the guest_list array)
 #guest_list_charge     = [1,2,2]    # Net charges for guests (in the same order as the guest_list array)
 
-# Host anchors 
+# Host anchors OA
 
-H1 = :1@C15          
-H2 = :1@C28
-H3 = :1@C40
+H1 = :1@C45
+H2 = :1@C53
+H3 = :1@C65
 
 final_host_num = 1  # Final residue number of the host. 1 is the default, larger values for hosts with multiple residues like CDs.
 
