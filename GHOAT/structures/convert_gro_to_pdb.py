@@ -1,7 +1,8 @@
 import parmed as pmd
 
 host_dict = {"OAH":"oa","OAMe":"oam"}
-
+host_oldresname_dict = {"OAH":"CLP","OAMe":"OCB"}
+host_newresname_dict = {"OAH":"OCT","OAMe":"OAM"}
 filetoconvert = "b.gro"
 #import nglview as nv
 from pathlib import Path
@@ -22,6 +23,11 @@ for root, dirs, files in os.walk(".", topdown=False):
                   filepath = Path("host-"+host_dict[components[0]]+components[1].replace("G", "-lda-guest-")+".pdb")
                   print(cwd/filepath)
                   amber = pmd.load_file(os.path.join(root, name))
+                  amber= amber["(:{})".format(host_oldresname_dict[components[0]])] + amber["(!:{})".format(host_oldresname_dict[components[0]])]
+                  for res in amber.residues:
+                        if res.name == host_oldresname_dict[components[0]]:
+                              res.name = host_newresname_dict[components[0]]
+                  
                   amber.save(str(filepath), overwrite=True)
    #for name in dirs:
    #   print(os.path.join(root, name))
