@@ -11,6 +11,9 @@ from pathlib import Path
 cwd = Path().absolute()
 print(cwd)
 import os
+CHARMMPRM = Path("CHARMMPRM")
+parpath = cwd/CHARMMPRM
+(cwd/CHARMMPRM).mkdir(parents=True, exist_ok=True)
 for root, dirs, files in os.walk(".", topdown=False):
    for name in files:
       #print(name)
@@ -36,8 +39,11 @@ for root, dirs, files in os.walk(".", topdown=False):
             host = amber["(:{})".format(host_newresname_dict[components[0]])]
             hostfilepath = Path("host-"+host_dict[components[0]]+".mol2")
             guestfilepath = Path(components[1].replace("G", "lda-guest-")+".mol2")
-            host.save(str(cwd/hostfilepath), overwrite=True)
-            guest.save(str(cwd/guestfilepath), overwrite=True)
+            host.save(str(hostfilepath), overwrite=True)
+            guest.save(str(guestfilepath), overwrite=True)
+            filepath_rtf = Path("host-"+host_dict[components[0]]+components[1].replace("G", "-lda-guest-")+".rtf")
+            filepath_prm = Path("host-"+host_dict[components[0]]+components[1].replace("G", "-lda-guest-")+".prm")
+            pmd.charmm.CharmmParameterSet.from_structure(amber).write(top=str(parpath/filepath_rtf), par=str(parpath/filepath_prm))
    #for name in dirs:
    #   print(os.path.join(root, name))
 #amber = pmd.load_file('/home/greg/Desktop/GHOAT.py/GHOAT/equil/guest-5/full.prmtop', '/home/greg/Desktop/GHOAT.py/GHOAT/equil/guest-5/full.inpcrd')
