@@ -14,12 +14,12 @@ for root, dirs, files in os.walk(".", topdown=False):
       #print(os.path.dirname(root))
       #print(os.path.basename(root))
       #print(os.path.basename(name))
-      if(os.path.basename(root).split("_")[0] in host_dict):
+      if(os.path.basename(root).split("_")[0] in host_dict and os.path.basename(root).split("_")[1]!="alone"):
             if(os.path.basename(name) == filetoconvert):
                   print(os.path.basename(root))
                   print(os.path.basename(name))
                   components = os.path.basename(root).split("_")
-                  filepath = Path("host-"+host_dict[components[0]]+components[1].replace("G", "-guest-")+".pdb")
+                  filepath = Path("host-"+host_dict[components[0]]+components[1].replace("G", "-lda-guest-")+".pdb")
                   print(cwd/filepath)
                   amber = pmd.load_file(os.path.join(root, name))
                   amber.save(str(filepath), overwrite=True)
